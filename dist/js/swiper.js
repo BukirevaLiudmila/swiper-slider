@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: October 11, 2017
+ * Released on: October 16, 2017
  */
 
 (function (global, factory) {
@@ -2983,7 +2983,7 @@ function getBreakpoint(breakpoints) {
 var setBreakpoint = function () {
   var swiper = this;
   var activeIndex = swiper.activeIndex;
-  var loopedSlides = swiper.loopedSlides;
+  var loopedSlides = swiper.loopedSlides; if ( loopedSlides === void 0 ) loopedSlides = 0;
   var params = swiper.params;
   var breakpoints = params.breakpoints;
   if (!breakpoints || (breakpoints && Object.keys(breakpoints).length === 0)) { return; }

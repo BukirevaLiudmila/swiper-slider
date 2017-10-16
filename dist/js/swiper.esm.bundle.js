@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: October 11, 2017
+ * Released on: October 16, 2017
  */
 
 import { $, add, addClass, append, attr, children, closest, css, data, each, eq, find, hasClass, html, index, is, next, nextAll, off, offset, on, outerHeight, outerWidth, parent, parents, prepend, prev, prevAll, remove, removeAttr, removeClass, styles, text, toggleClass, transform, transition, transitionEnd, trigger } from 'dom7/dist/dom7.modular';
@@ -2120,7 +2120,7 @@ function getBreakpoint(breakpoints) {
 
 var setBreakpoint = function () {
   const swiper = this;
-  const { activeIndex, loopedSlides, params } = swiper;
+  const { activeIndex, loopedSlides = 0, params } = swiper;
   const breakpoints = params.breakpoints;
   if (!breakpoints || (breakpoints && Object.keys(breakpoints).length === 0)) return;
   // Set breakpoint for window width and update parameters
